@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		C340F99B29BC52500099AACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F99A29BC52500099AACD /* AppDelegate.swift */; };
 		C340F99D29BC52500099AACD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F99C29BC52500099AACD /* SceneDelegate.swift */; };
-		C340F99F29BC52500099AACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F99E29BC52500099AACD /* ViewController.swift */; };
-		C340F9A229BC52500099AACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C340F9A029BC52500099AACD /* Main.storyboard */; };
 		C340F9A429BC52510099AACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C340F9A329BC52510099AACD /* Assets.xcassets */; };
 		C340F9A729BC52510099AACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C340F9A529BC52510099AACD /* LaunchScreen.storyboard */; };
+		C340F9B629BC52D20099AACD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C340F9B529BC52D20099AACD /* .gitignore */; };
+		C340F9B829BC52E40099AACD /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9B729BC52E40099AACD /* CustomNavigationController.swift */; };
+		C340F9BA29BC52FC0099AACD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9B929BC52FC0099AACD /* Constants.swift */; };
+		C340F9BF29BC53450099AACD /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C340F9BC29BC53450099AACD /* NotoSansCJKkr-Bold.otf */; };
+		C340F9C029BC53450099AACD /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C340F9BD29BC53450099AACD /* NotoSansCJKkr-Medium.otf */; };
+		C340F9C129BC53450099AACD /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C340F9BE29BC53450099AACD /* NotoSansCJKkr-Regular.otf */; };
+		C340F9C329BC53AF0099AACD /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9C229BC53AF0099AACD /* Font+Extension.swift */; };
+		C340F9C529BC53C30099AACD /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9C429BC53C30099AACD /* Color+Extension.swift */; };
+		C340F9CD29BC54390099AACD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9CC29BC54390099AACD /* CustomButton.swift */; };
+		C340F9CF29BC54500099AACD /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9CE29BC54500099AACD /* CustomText.swift */; };
+		C340F9D129BC54730099AACD /* Tamagochi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9D029BC54730099AACD /* Tamagochi.swift */; };
+		C340F9D329BC54840099AACD /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9D229BC54840099AACD /* PopupView.swift */; };
+		C340F9D629BC549C0099AACD /* TamagochiIntroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9D529BC549C0099AACD /* TamagochiIntroModel.swift */; };
+		C340F9D929BC54B60099AACD /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9D829BC54B60099AACD /* SelectViewModel.swift */; };
+		C340F9DC29BC54D00099AACD /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9DB29BC54D00099AACD /* SelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C340F99729BC52500099AACD /* TamagochiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamagochiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C340F99A29BC52500099AACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C340F99C29BC52500099AACD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C340F99E29BC52500099AACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C340F9A129BC52500099AACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C340F9A329BC52510099AACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C340F9A629BC52510099AACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C340F9A829BC52510099AACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C340F9B529BC52D20099AACD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C340F9B729BC52E40099AACD /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		C340F9B929BC52FC0099AACD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C340F9BC29BC53450099AACD /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		C340F9BD29BC53450099AACD /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		C340F9BE29BC53450099AACD /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		C340F9C229BC53AF0099AACD /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		C340F9C429BC53C30099AACD /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		C340F9CC29BC54390099AACD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C340F9CE29BC54500099AACD /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		C340F9D029BC54730099AACD /* Tamagochi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagochi.swift; sourceTree = "<group>"; };
+		C340F9D229BC54840099AACD /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		C340F9D529BC549C0099AACD /* TamagochiIntroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagochiIntroModel.swift; sourceTree = "<group>"; };
+		C340F9D829BC54B60099AACD /* SelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModel.swift; sourceTree = "<group>"; };
+		C340F9DB29BC54D00099AACD /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,140 @@
 		C340F99929BC52500099AACD /* TamagochiApp */ = {
 			isa = PBXGroup;
 			children = (
-				C340F99A29BC52500099AACD /* AppDelegate.swift */,
-				C340F99C29BC52500099AACD /* SceneDelegate.swift */,
-				C340F99E29BC52500099AACD /* ViewController.swift */,
-				C340F9A029BC52500099AACD /* Main.storyboard */,
-				C340F9A329BC52510099AACD /* Assets.xcassets */,
-				C340F9A529BC52510099AACD /* LaunchScreen.storyboard */,
-				C340F9A829BC52510099AACD /* Info.plist */,
+				C340F9B529BC52D20099AACD /* .gitignore */,
+				C340F9B229BC52A20099AACD /* Helper */,
+				C340F9B129BC529C0099AACD /* Presenter */,
+				C340F9B029BC52940099AACD /* Storyboards */,
+				C340F9AF29BC528F0099AACD /* Application */,
+				C340F9AE29BC52840099AACD /* Resources */,
 			);
 			path = TamagochiApp;
+			sourceTree = "<group>";
+		};
+		C340F9AE29BC52840099AACD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9BB29BC533A0099AACD /* Font */,
+				C340F9A329BC52510099AACD /* Assets.xcassets */,
+				C340F9A829BC52510099AACD /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C340F9AF29BC528F0099AACD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C340F99A29BC52500099AACD /* AppDelegate.swift */,
+				C340F99C29BC52500099AACD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C340F9B029BC52940099AACD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9A529BC52510099AACD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C340F9B129BC529C0099AACD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9CB29BC542A0099AACD /* CustomView */,
+				C340F9C929BC53ED0099AACD /* Component */,
+				C340F9C829BC53E80099AACD /* Model */,
+				C340F9C729BC53E30099AACD /* ViewModel */,
+				C340F9C629BC53DE0099AACD /* View */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C340F9B229BC52A20099AACD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9B329BC52AE0099AACD /* Extensions */,
+				C340F9B729BC52E40099AACD /* CustomNavigationController.swift */,
+				C340F9B929BC52FC0099AACD /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C340F9B329BC52AE0099AACD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9C229BC53AF0099AACD /* Font+Extension.swift */,
+				C340F9C429BC53C30099AACD /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C340F9BB29BC533A0099AACD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9BC29BC53450099AACD /* NotoSansCJKkr-Bold.otf */,
+				C340F9BD29BC53450099AACD /* NotoSansCJKkr-Medium.otf */,
+				C340F9BE29BC53450099AACD /* NotoSansCJKkr-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C340F9C629BC53DE0099AACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9DA29BC54C00099AACD /* Select */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C340F9C729BC53E30099AACD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9D729BC54A60099AACD /* Select */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C340F9C829BC53E80099AACD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9D529BC549C0099AACD /* TamagochiIntroModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C340F9C929BC53ED0099AACD /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9D029BC54730099AACD /* Tamagochi.swift */,
+				C340F9D229BC54840099AACD /* PopupView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		C340F9CB29BC542A0099AACD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9CC29BC54390099AACD /* CustomButton.swift */,
+				C340F9CE29BC54500099AACD /* CustomText.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C340F9D729BC54A60099AACD /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9D829BC54B60099AACD /* SelectViewModel.swift */,
+			);
+			path = Select;
+			sourceTree = "<group>";
+		};
+		C340F9DA29BC54C00099AACD /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9DB29BC54D00099AACD /* SelectView.swift */,
+			);
+			path = Select;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C340F9B629BC52D20099AACD /* .gitignore in Resources */,
+				C340F9C129BC53450099AACD /* NotoSansCJKkr-Regular.otf in Resources */,
+				C340F9BF29BC53450099AACD /* NotoSansCJKkr-Bold.otf in Resources */,
 				C340F9A729BC52510099AACD /* LaunchScreen.storyboard in Resources */,
 				C340F9A429BC52510099AACD /* Assets.xcassets in Resources */,
-				C340F9A229BC52500099AACD /* Main.storyboard in Resources */,
+				C340F9C029BC53450099AACD /* NotoSansCJKkr-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +292,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C340F99F29BC52500099AACD /* ViewController.swift in Sources */,
+				C340F9D929BC54B60099AACD /* SelectViewModel.swift in Sources */,
+				C340F9D129BC54730099AACD /* Tamagochi.swift in Sources */,
+				C340F9BA29BC52FC0099AACD /* Constants.swift in Sources */,
+				C340F9C529BC53C30099AACD /* Color+Extension.swift in Sources */,
+				C340F9D629BC549C0099AACD /* TamagochiIntroModel.swift in Sources */,
+				C340F9D329BC54840099AACD /* PopupView.swift in Sources */,
+				C340F9DC29BC54D00099AACD /* SelectView.swift in Sources */,
+				C340F9C329BC53AF0099AACD /* Font+Extension.swift in Sources */,
+				C340F9CF29BC54500099AACD /* CustomText.swift in Sources */,
+				C340F9B829BC52E40099AACD /* CustomNavigationController.swift in Sources */,
+				C340F9CD29BC54390099AACD /* CustomButton.swift in Sources */,
 				C340F99B29BC52500099AACD /* AppDelegate.swift in Sources */,
 				C340F99D29BC52500099AACD /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +311,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C340F9A029BC52500099AACD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C340F9A129BC52500099AACD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C340F9A529BC52510099AACD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +445,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48S4T8HCYX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TamagochiApp/Info.plist;
+				INFOPLIST_FILE = TamagochiApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +473,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48S4T8HCYX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TamagochiApp/Info.plist;
+				INFOPLIST_FILE = TamagochiApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
