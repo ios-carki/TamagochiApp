@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         navController = CustomNavigationController()
                 
-        let hostingController = UIHostingController(rootView: SelectView(navigation: navController))
+        let hostingController = UIHostingController(rootView: SelectView(navigation: navController, viewModel: SelectViewModel()))
         navController?.pushViewController(hostingController, animated: true)
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)

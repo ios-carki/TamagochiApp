@@ -26,6 +26,11 @@
 		C340F9D629BC549C0099AACD /* TamagochiIntroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9D529BC549C0099AACD /* TamagochiIntroModel.swift */; };
 		C340F9D929BC54B60099AACD /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9D829BC54B60099AACD /* SelectViewModel.swift */; };
 		C340F9DC29BC54D00099AACD /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9DB29BC54D00099AACD /* SelectView.swift */; };
+		C340F9DF29BC56EC0099AACD /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = C340F9DE29BC56EC0099AACD /* AlertToast */; };
+		C340F9E129BC5BAB0099AACD /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9E029BC5BAB0099AACD /* UserDefaultsHelper.swift */; };
+		C340F9E729BC69BA0099AACD /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340F9E629BC69BA0099AACD /* PopupViewModel.swift */; };
+		C3D31EAC29BF748D0047BFFB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D31EAB29BF748D0047BFFB /* MainView.swift */; };
+		C3D31EAE29BF74940047BFFB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D31EAD29BF74940047BFFB /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,10 @@
 		C340F9D529BC549C0099AACD /* TamagochiIntroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagochiIntroModel.swift; sourceTree = "<group>"; };
 		C340F9D829BC54B60099AACD /* SelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModel.swift; sourceTree = "<group>"; };
 		C340F9DB29BC54D00099AACD /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		C340F9E029BC5BAB0099AACD /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		C340F9E629BC69BA0099AACD /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
+		C3D31EAB29BF748D0047BFFB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C3D31EAD29BF74940047BFFB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C340F9DF29BC56EC0099AACD /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +147,7 @@
 				C340F9B329BC52AE0099AACD /* Extensions */,
 				C340F9B729BC52E40099AACD /* CustomNavigationController.swift */,
 				C340F9B929BC52FC0099AACD /* Constants.swift */,
+				C340F9E029BC5BAB0099AACD /* UserDefaultsHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 		C340F9C629BC53DE0099AACD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C3D31EA929BF74520047BFFB /* Main */,
 				C340F9DA29BC54C00099AACD /* Select */,
 			);
 			path = View;
@@ -171,6 +183,8 @@
 		C340F9C729BC53E30099AACD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C3D31EAA29BF74600047BFFB /* Main */,
+				C340F9E529BC69B10099AACD /* Popup */,
 				C340F9D729BC54A60099AACD /* Select */,
 			);
 			path = ViewModel;
@@ -218,6 +232,30 @@
 			path = Select;
 			sourceTree = "<group>";
 		};
+		C340F9E529BC69B10099AACD /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				C340F9E629BC69BA0099AACD /* PopupViewModel.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		C3D31EA929BF74520047BFFB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3D31EAB29BF748D0047BFFB /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C3D31EAA29BF74600047BFFB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3D31EAD29BF74940047BFFB /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +272,9 @@
 			dependencies = (
 			);
 			name = TamagochiApp;
+			packageProductDependencies = (
+				C340F9DE29BC56EC0099AACD /* AlertToast */,
+			);
 			productName = TamagochiApp;
 			productReference = C340F99729BC52500099AACD /* TamagochiApp.app */;
 			productType = "com.apple.product-type.application";
@@ -262,6 +303,9 @@
 				Base,
 			);
 			mainGroup = C340F98E29BC52500099AACD;
+			packageReferences = (
+				C340F9DD29BC56EC0099AACD /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = C340F99829BC52500099AACD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,13 +336,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C340F9E129BC5BAB0099AACD /* UserDefaultsHelper.swift in Sources */,
+				C340F9E729BC69BA0099AACD /* PopupViewModel.swift in Sources */,
 				C340F9D929BC54B60099AACD /* SelectViewModel.swift in Sources */,
 				C340F9D129BC54730099AACD /* Tamagochi.swift in Sources */,
 				C340F9BA29BC52FC0099AACD /* Constants.swift in Sources */,
 				C340F9C529BC53C30099AACD /* Color+Extension.swift in Sources */,
 				C340F9D629BC549C0099AACD /* TamagochiIntroModel.swift in Sources */,
 				C340F9D329BC54840099AACD /* PopupView.swift in Sources */,
+				C3D31EAE29BF74940047BFFB /* MainViewModel.swift in Sources */,
 				C340F9DC29BC54D00099AACD /* SelectView.swift in Sources */,
+				C3D31EAC29BF748D0047BFFB /* MainView.swift in Sources */,
 				C340F9C329BC53AF0099AACD /* Font+Extension.swift in Sources */,
 				C340F9CF29BC54500099AACD /* CustomText.swift in Sources */,
 				C340F9B829BC52E40099AACD /* CustomNavigationController.swift in Sources */,
@@ -451,6 +499,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +528,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,6 +564,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C340F9DD29BC56EC0099AACD /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C340F9DE29BC56EC0099AACD /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C340F9DD29BC56EC0099AACD /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C340F98F29BC52500099AACD /* Project object */;
 }

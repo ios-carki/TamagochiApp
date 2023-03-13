@@ -14,6 +14,8 @@ final class SelectViewModel: ObservableObject {
     @Published var tamagochiName: [String] = []
     @Published var tamagochiDetail: [String] = []
     
+    @Published var showToast: Bool = false
+    
     init() {
         insertData()
     }

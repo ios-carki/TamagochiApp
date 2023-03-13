@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PopupView: View {
+    weak var navigation: UINavigationController?
+    @StateObject var viewModel = PopupViewModel()
+    
     var action: () -> ()
     
     var tamagochiImage: String
@@ -18,7 +21,9 @@ struct PopupView: View {
         ZStack(alignment: .center) {
             Color.black.opacity(0.7).ignoresSafeArea()
                 .onTapGesture {
+                    print("빈공간 눌림")
                     action()
+                    print(viewModel.buttonDisabled)
                 }
             VStack(alignment: .center, spacing: 20) {
                 Image(tamagochiImage)
@@ -33,6 +38,7 @@ struct PopupView: View {
                 Divider()
                     .background(Color.textColor)
                     .frame(height: 10)
+                    .padding(.horizontal, 45)
                 
                 CustomText()
                     .setTitle(title: tamagochiDetail)
@@ -50,10 +56,22 @@ struct PopupView: View {
                         CustomButton()
                             .setType(type: .cancel)
                             .setTitle(title: "취소")
+                            .click({
+                                print("취소 눌림")
+                                UserDefaultsHelper.setData(value: false, key: .gameStatus)
+                                action()
+                            })
 
                         CustomButton()
                             .setType(type: .ok)
                             .setTitle(title: "시작하기")
+                            .click {
+                                print("시작하기 눌림")
+                                UserDefaultsHelper.setData(value: true, key: .gameStatus)
+                                UserDefaultsHelper.setData(value: tamagochiImage, key: .tamagochiImage)
+                                UserDefaultsHelper.setData(value: tamagochiName, key: .tamagochiName)
+                                action()
+                            }
                     }
                 }
             }

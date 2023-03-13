@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+import AlertToast
+
 struct SelectView: View {
     weak var navigation: UINavigationController?
-    @StateObject var viewModel = SelectViewModel()
+    @StateObject var viewModel: SelectViewModel
     
     let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 10, alignment: .center),
@@ -30,8 +32,10 @@ struct SelectView: View {
             }
             .padding(.horizontal, 10)
         }
-        
         .navigationTitle("다마고치 선택하기")
+        .toast(isPresenting: $viewModel.showToast) {
+            AlertToast(displayMode: .banner(.pop), type: .error(.red), title: "준비중입니다.")
+        }
     }
         
                 
@@ -43,16 +47,33 @@ struct SelectView: View {
                         print(index)
                         let vc = UIHostingController(rootView: PopupView(action: {
                             self.navigation?.dismiss(animated: false)
+                            
+                            //취소버튼을 누를때 - cancel
+                            if UserDefaultsHelper.getData(type: Bool.self, forKey: .gameStatus) == false {
+                                print("취소버튼 눌림")
+                            } else {
+                                print("시작버튼 눌림")
+                                navigation?.viewControllers = [UIHostingController(rootView: SelectView(navigation: navigation, viewModel: viewModel))]
+                                navigation?.pushViewController(UIHostingController(rootView: MainView(navigation: navigation)), animated: true)
+                            }
+                            
+//                            if viewModel.type == .main {
+//                                navigation?.viewControllers = [UIHostingController(rootView: SelectView(navigation: navigation, viewModel: SelectViewModel(type: .sub)))]
+//                                navigation?.pushViewController(UIHostingController(rootView: MainView(navigation: navigation)), animated: true)
+//                            } else if viewModel.type == .sub {
+//                                navigation?.viewControllers = [UIHostingController(rootView: SelectView(navigation: navigation, viewModel: SelectViewModel(type: .main)))]
+//                                navigation?.pushViewController(UIHostingController(rootView: MainView(navigation: navigation)), animated: true)
+//                            }
                         }, tamagochiImage: viewModel.tamagochiImage[index], tamagochiName: viewModel.tamagochiName[index], tamagochiDetail: viewModel.tamagochiDetail[index]))
                         vc.view.backgroundColor = UIColor.clear
                         vc.modalPresentationStyle = .overCurrentContext
                         self.navigation?.present(vc, animated: false)
-                        
                     }
             } else {
                 Tamagochi(tamagochiImage: viewModel.tamagochiImage[3], tamagochiName: viewModel.tamagochiName[3])
                     .onTapGesture {
                         print(index)
+                        viewModel.showToast = true
                     }
             }
         }
@@ -62,6 +83,6 @@ struct SelectView: View {
 
 struct SelectViewPreview: PreviewProvider {
     static var previews: some View {
-        SelectView()
+        SelectView(viewModel: SelectViewModel())
     }
 }

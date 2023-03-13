@@ -28,3 +28,10 @@ enum ColorHex: String{
     case angryRed = "#FA0606"
     case shinyGreen = "#00FF00"
 }
+
+enum UserDefaultKeys: String, CaseIterable {
+    case tamagochiImage
+    case tamagochiName
+    
+    case gameStatus // cancel - false, start - true
+}
